@@ -17,10 +17,10 @@ try:
     num1 = int(num1_v.text)
     num2_v = browser.find_element_by_css_selector("[id='num2']")
     num2 = int(num2_v.text)
-    y = calc(num1, num2)
+    result = calc(num1, num2)
 
     select = Select(browser.find_element_by_tag_name("select"))
-    select.select_by_value(y)  # ищем элемент с текстом "Python"
+    select.select_by_value(result)
 
     button = browser.find_element_by_css_selector('button')
     button.click()
