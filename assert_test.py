@@ -14,7 +14,7 @@ try:
     input3 = browser.find_element_by_xpath('/html/body/div/form/div[1]/div[3]/input')
     input3.send_keys("test@mail.com")
     input4 = browser.find_element_by_xpath('/html/body/div/form/div[2]/div[1]/input')
-    input4.send_keys("+380673456790")
+    input4.send_keys("+380633456790")
     input5 = browser.find_element_by_xpath('/html/body/div/form/div[2]/div[2]/input')
     input5.send_keys("Earth")
 
