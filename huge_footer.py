@@ -17,7 +17,7 @@ try:
     x_element = browser.find_element_by_css_selector("[id='input_value']")
     x = x_element.text
     y = calc(x)
-    browser.find_element_by_tag_name('body').send_keys(Keys.END)
+    browser.find_element_by_tag_name('body').send_keys(Keys.END) # page scroll down
 
     answer_field = browser.find_element_by_css_selector("[id='answer']")
     answer_field.send_keys(y)
