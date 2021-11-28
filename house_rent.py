@@ -18,7 +18,7 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    button = WebDriverWait(browser, 12).until(
+    button = WebDriverWait(browser, 14).until(
         EC.text_to_be_present_in_element((By.ID, "price"), "$100"))
 
     button2 = browser.find_element_by_css_selector("[id='book']")
